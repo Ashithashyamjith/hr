@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="{% static 'css/emp_reg.css' %}">
+    
+</head>
+<body style="font-family: sans-serif;">
+  <div id="header" style="position: sticky; top: 0; z-index: 10; ">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-image: linear-gradient(to right, #000000 0%, #808080 100%);padding: 0 ;box-shadow: 0 .1rem .3rem #999; ">
+      <a class="navbar-brand" href="#" style="color: white; font-weight: 600; margin-left: 2%;" ><B>LOGO</B></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" >
+        <ul class="navbar-nav " style="margin-left: 35%; padding: 0 10px;">
+          <li class="nav-item " style="margin-right: 2rem;">
+            <a class="nav-link" href="#" style="color: white; font-weight: 600;">Home</a>
+          </li>
+          <li class="nav-item" style="margin-right: 2rem;">
+            <a class="nav-link" href="reg" style="color: white; font-weight: 600;">Registration</a>
+          </li>
+          <li class="nav-item dropdown" style="margin-right: 2rem;">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#" style="color: white; font-weight: 600;">Department
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="add-dept">Add Department</a></li>
+              <li><a class="dropdown-item" href="#">View Department</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" style="margin-right: 2rem;">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#" style="color: white; font-weight: 600;">Recruitment
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="recruitment-post">Recruitment Post</a></li>
+              <li><a class="dropdown-item" href="interview">Interview</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" style="margin-right: 2rem;">
+            <a class="nav-link" href="#" style="color: white; font-weight: 600;">Attendance</a>
+          </li>
+          <li class="nav-item" style="margin-right: 2rem;">
+            <a class="nav-link" href="#" style="color: white; font-weight: 600;">Salary</a>
+          </li>
+          <li class="nav-item" style="margin-right: 2rem;">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#" style="color: white; font-weight: 600;">More
+              <span class="caret"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+        
+    
+<div class="col-lg-9">
+    {% block content %}
+    {% endblock %}
+
+</div>
+
+</body>
+  
+</html>

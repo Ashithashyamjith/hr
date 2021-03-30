@@ -1,0 +1,124 @@
+{% extends 'hr-home1.html' %}
+{% block content %}
+
+    <div class="container" >
+        <div class="row">
+            
+            <div class="col-md-6"  style="background: rgba(0, 0, 0, 0.4); height: 900px; box-shadow: -1px 1px 60px 10px black inset; position: absolute; margin-top: 2%; margin-left: 40%; " >
+                <h1 class="text-center" style="font-size: 40px; color: black; margin-top: 20px; margin-bottom: 30px;"><b>REGISTER</b></h1>
+                <form id="row1" action="">
+                    <label class="label col-md-2 control-label "  style="padding-left: 2%; margin-left: 10%;"><b>User_id</b></label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="test1" name="name" placeholder="id" style="background: rgba(255, 255, 255, 0.2); border: 0px; border-radius: 0px; border-bottom: 2px solid white; font-size: 15px; color: white; margin-left: 12%; ">
+                    <label for="" id="err"></label>
+                </div>
+                <label class="label col-md-2 control-label" style="padding-left: 2%; margin-left: 10%;"><b>Name</b></label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="form_name" name="name" placeholder="Name" style="background: rgba(255, 255, 255, 0.2); border: 0px; border-radius: 0px; border-bottom: 2px solid white; font-size: 15px; color: white;margin-left: 12%; " required="">
+                    <label class="err_form" id="name_err"></label>
+                </div>
+                <label class="label col-md-2 control-label" style="padding-left: 2%; margin-left: 10%;"><b>Address</b></label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="name" placeholder="Address" style="background: rgba(255, 255, 255, 0.2); border: 0px; border-radius: 0px; border-bottom: 2px solid white; font-size: 15px; color: white;margin-left: 12%; ">
+                 </div>
+                <label class="label col-md-2 control-label" style="padding-left: 2%; margin-left: 10%;"><b>DOB</b></label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="name" placeholder="dd/mm/yyyy" style="background: rgba(255, 255, 255, 0.2); border: 0px; border-radius: 0px; border-bottom: 2px solid white; font-size: 15px; color: white; margin-left: 12%;">
+                    
+                </div>
+                <label class="label col-md-2 control-label" style="padding-left: 2%; margin-left: 10%;"><b>MobileNumber</b></label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="name" placeholder="Mobile No" style="background: rgba(255, 255, 255, 0.2); border: 0px; border-radius: 0px; border-bottom: 2px solid white; font-size: 15px; color: white; margin-left: 12%;">
+                    
+                </div>
+                <label class="label col-md-2 control-label" style="padding-left: 2%; margin-left: 10%;"><b>Gender</b></label>
+                <div class="col-md-10">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="margin-left: 11%;" >
+                    <label class="form-check-label" for="inlineRadio1" style="margin-left: 16%;">Male</label>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="margin-left: 7%;">
+                    <label class="form-check-label" for="inlineRadio1" style="margin-left: 11%;">Female</label>
+                </div>
+                <label class="label col-md-2 control-label" style="padding-left: 2%; margin-left: 10%;"><b>Department</b></label>
+                <div class="col-md-10">
+                    <select class="form-control"  style="background: rgba(255, 255, 255, 0.2); border: 0px; border-radius: 0px; border-bottom: 1px solid white; font-size: 15px; color: white; margin-left: 12%;">
+                        <option style="color: #666;" >Select...</option>
+                        <option style="color: #666;"></option>
+                        <option style="color: #666;"></option>
+                    </select>
+                </div>
+                <label class="label col-md-2 control-label" style="padding-left: 2%; margin-left: 10%;"><b>Position</b></label>
+                <div class="col-md-10">
+                    <select class="form-control" style="background: rgba(255, 255, 255, 0.2); border: 0px; border-radius: 0px; border-bottom: 1px solid white; font-size: 15px; color: white; margin-left: 12%; ">
+                        <option style="color: #666;">Select...</option>
+                        <option style="color: #666;">Software Testing</option>
+                        <option style="color: #666;">Python Developer</option>
+                        <option style="color: #666;">Software Developer</option>
+                        <option style="color: #666;">Software Engineer</option>
+    
+                    </select>
+                </div>
+                <label class="label col-md-2 control-label" style="padding-left: 2%; margin-left: 10%;"><b>E-mail</b></label>
+                <div class="col-md-10">
+                    <input type="E-mail" class="form-control" name="E-mail" placeholder="E-mail" style="background: rgba(255, 255, 255, 0.2); border: 0px; border-radius: 0px; border-bottom: 1px solid white; font-size: 15px; color: white;  margin-left: 12%;">
+                    
+                </div>
+                <label class="label col-md-2 control-label" style="padding-left: 2%; margin-left: 10%;"><b>Password</b></label>
+                <div class="col-md-10">
+                    <input type="password" class="form-control" name="password" placeholder="Password" style="background: rgba(255, 255, 255, 0.2); border: 0px; border-radius: 0px; border-bottom: 1px solid white; font-size: 15px; color: white; margin-left: 12%;">
+                    
+                </div>
+                <div class="btn-group inline pull-left" > 
+                     <a href="#"><div class="btn btn-info" style="margin-top: 40px; margin-left: 45%; width: 180px; font-size: 19px; border-radius: 1000px;">Submit</div></a> 
+                     <a href="#"><div class="btn btn-info" style="margin-top: 40px; margin-left: 55%; width: 180px; font-size: 19px; border-radius: 1000px;">Reset</div></a> 
+                </div> 
+
+                </form>
+                
+                
+                
+    
+            </div>
+        </div>
+    
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#name_err").hide();
+            
+            $("#form_name").keyup(function(){
+                check_name();
+            });
+            function check_name(){
+                 
+                name_length = $("form_name").val().length;
+                if(name_length >=1)
+                {
+                    
+                    $("#name_err").html("Please enter your name");
+                    $("#name_err").show();
+                    $("#form_name").css("color","red");
+                    errname=false;
+                }else{
+                    $("#name_err").hide();
+                    errname = true;
+                }
+            }
+            $("#row1").submit(function(){
+            errname=false;
+            check_name()
+            if(errname == false){
+                alert('Plz fill form')
+                return false;
+                
+            }
+            else{
+                alert('REg completed')
+                return true;
+            }
+        });
+        });
+       
+    
+    </script>
+
+ {% endblock %}

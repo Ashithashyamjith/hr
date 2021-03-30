@@ -1,0 +1,28 @@
+{% extends 'emp-home.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-12">
+      <h2 style="margin-left: 6%; margin-top: 3%; "><b>APPLY FOR LEAVE</b></h2>
+      <form>
+        <div class="card" style="margin-left: 5%; margin-top: 4%;">
+            <div class="card-header" style="background-color: royalblue; color: white;">
+              Apply for Leave
+            </div>
+            <div class="card-body">
+              <label><b>Leave Date</b></label>
+              <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+              <br>
+              <label><b>Leave Reason</b></label>
+              <textarea class="form-control" rows="6">Enter your reason</textarea>
+              <br>
+              <div class="btn-group inline pull-left" > 
+                <a href="#"><div class="btn btn-primary btn-block" style="margin-top: 60px; margin-left: 250%; width: 180px; font-size: 19px; border-radius: 1000px;">Apply For Leave</div></a> 
+                
+              </div> 
+            </div>
+          </div>
+      </form>
+    </div>
+</div>    
+
+{% endblock %}
